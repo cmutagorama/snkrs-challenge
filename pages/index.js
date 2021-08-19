@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <h3>SNKRS home</h3>
+    <h4>Home page</h4>
   )
 }
