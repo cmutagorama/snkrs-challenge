@@ -19,22 +19,22 @@ const Footer = () => (
 					<h5 className="text-white font-bold mb-2">Get Help</h5>
 					<ul className="list-none footer-links">
 						<li className="mb-2">
-							<Link href="#">Order Status</Link>
+							<Link href="/">Order Status</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Shipping and delivery</Link>
+							<Link href="/">Shipping and delivery</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Returns</Link>
+							<Link href="/">Returns</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Payment Options</Link>
+							<Link href="/">Payment Options</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Gift card balance</Link>
+							<Link href="/">Gift card balance</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Contact Us</Link>
+							<Link href="/">Contact Us</Link>
 						</li>
 					</ul>
 				</div>
@@ -42,19 +42,19 @@ const Footer = () => (
 					<h5 className="text-white font-bold mb-2">About Nike</h5>
 					<ul className="list-none footer-links">
 						<li className="mb-2">
-							<Link href="#">News</Link>
+							<Link href="/">News</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Careers</Link>
+							<Link href="/">Careers</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Investors</Link>
+							<Link href="/">Investors</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Purpose</Link>
+							<Link href="/">Purpose</Link>
 						</li>
 						<li className="mb-2">
-							<Link href="#">Sustainability</Link>
+							<Link href="/">Sustainability</Link>
 						</li>
 					</ul>
 				</div>
