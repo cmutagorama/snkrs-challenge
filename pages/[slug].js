@@ -6,6 +6,7 @@ import Pagination from '../components/Pagination';
 import ProductList from '../components/ProductList';
 import Skeleton from '../components/Skeleton';
 import { getProducts } from '../lib/api';
+import { range } from '../utils/helper';
 import Error from './_error';
 
 const pageSize = 12;
@@ -20,12 +21,9 @@ function SlugPage() {
 	if (isLoading) {
 		return (
 			<div className="grid-columns">
-				<Skeleton />
-				<Skeleton />
-				<Skeleton />
-				<Skeleton />
-				<Skeleton />
-				<Skeleton />
+				{
+					range(1, pageSize).map((elt, idx) => <Skeleton key={idx} />)
+				}
 			</div>
 		)
 	};
