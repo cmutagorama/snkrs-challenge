@@ -9,7 +9,7 @@ function Error({ statusCode }) {
 					: 'An error occurred on client' }
 			</h1>
 			<p className="text-gray-700 mb-10">Oops, something went wrong</p>
-			<Link href="/">
+			<Link href="/" passHref>
 				<span className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-2 tracking-wider uppercase text-sm">&larr; Go back home</span>
 			</Link>
 		</div>
