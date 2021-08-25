@@ -87,7 +87,7 @@ footer h5 {
 /* LOADER CSS */
 
 .pag-item {
-  @apply text-gray-500 bg-transparent border border-gray-500 hover:bg-gray-500 hover:text-white active:bg-gray-600 font-bold uppercase text-xs px-4 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150;
+  @apply text-gray-500 bg-transparent border border-gray-500 border-opacity-50 hover:bg-gray-500 hover:text-white active:bg-gray-600 font-bold uppercase text-xs px-4 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150;
 }
 
 .pag-item:disabled {
