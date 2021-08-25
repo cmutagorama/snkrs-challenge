@@ -45,3 +45,57 @@ footer h5 {
 .footer-icons a {
   background-color: #7e7e7e;
 }
+
+.grid-columns {
+  @apply grid lg:gap-x-8 lg:gap-y-4 lg:grid-cols-3 md:gap-6 md:grid-cols-1;
+}
+
+.add-to button {
+  @apply border-2 border-gray-200 bg-white hover:bg-gray-900 text-black hover:text-white w-full py-3;
+}
+
+.add-to button:disabled {
+  color: #9ca3af;
+  background-color: #f7f7f7;
+  pointer-events: none !important;
+}
+
+/* LOADER CSS */
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* LOADER CSS */
+
+.pag-item {
+  @apply text-gray-500 bg-transparent border border-gray-500 hover:bg-gray-500 hover:text-white active:bg-gray-600 font-bold uppercase text-xs px-4 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150;
+}
+
+.pag-item:disabled {
+  background-color: #ccc;
+  pointer-events: none !important;
+}
+
+.active-item {
+  background-color: #4b5563;
+  color: #fff;
+}
