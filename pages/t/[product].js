@@ -34,14 +34,14 @@ function ProductDetails(props) {
 	if (product && shoe) {
 		return (
 			<>
-				<Image src={shoe.imageUrl} width="1280" height="650" />
+				<Image src={shoe.imageUrl} width="1280" height="650" alt="Random image" />
 				<div className="flex justify-center md:my-16">
 					<div className="text-center md:w-2/5">
 						<p className="text-2xl font-medium mb-2">{product.name}</p>
 						<p>{product.description}</p>
 					</div>
 				</div>
-				<Image src={shoe.imageUrl} width="1280" height="650" />
+				<Image src={shoe.imageUrl} width="1280" height="650" alt="Random image" />
 				<div className="flex justify-center md:my-7">
 					<div className="text-center md:w-3/12">
 						<p className="text-xl mb-2">{product.name}</p>
