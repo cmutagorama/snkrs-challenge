@@ -13,12 +13,12 @@ const Footer = () => (
 				<div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
 					{
 						mainLinks.map((elt, index) => (
-							<h5 className="text-white font-bold mb-2" key={index}>{ elt }</h5>
+							<h5 className="text-white font-bold cursor-pointer mb-2" key={index}>{ elt }</h5>
 						))
 					}
 				</div>
 				<div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-					<h5 className="text-white font-bold mb-2">Get Help</h5>
+					<h5 className="text-white font-bold cursor-pointer mb-2">Get Help</h5>
 					<ul className="list-none footer-links">
 						{
 							secondaryLinks.map((elt, index) => (
@@ -30,7 +30,7 @@ const Footer = () => (
 					</ul>
 				</div>
 				<div className="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
-					<h5 className="text-white font-bold mb-2">About Nike</h5>
+					<h5 className="text-white font-bold cursor-pointer mb-2">About Nike</h5>
 					<ul className="list-none footer-links">
 						{
 							tertiaryLinks.map((elt, index) => (

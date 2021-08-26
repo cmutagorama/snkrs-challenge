@@ -1,18 +1,24 @@
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Layout from '../components/Layout';
 import NextNProgress from '../components/Progressbar';
-import '../styles/globals.css'
+import SEO from '../components/SEO';
+import { CartProvider } from '../contexts/cart';
+import '../styles/globals.css';
+import '@fortawesome/fontawesome-svg-core/styles.css'
 
 function MyApp({ Component, pageProps }) {
 	const queryClient = new QueryClient();
 
 	return (
-		<QueryClientProvider client={queryClient}>
-			<NextNProgress />
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
-		</QueryClientProvider>
+		<CartProvider>
+			<QueryClientProvider client={queryClient}>
+				<NextNProgress />
+				<SEO title="SNKRS" />
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
+			</QueryClientProvider>
+		</CartProvider>
 	);
 }
 
