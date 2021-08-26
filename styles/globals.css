@@ -2,17 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: local("GT Walsheim Pro Regular"), local("GTWalsheimProRegular"),
+    url(/fonts/GTWalsheimProRegular.woff2) format("woff2"),
+    url(/fonts/GTWalsheimProRegular.woff) format("woff"),
+    url(/fonts/GTWalsheimProRegular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: local("GT Walsheim Pro Medium"), local("GTWalsheimProMedium"),
+    url(/fonts/GTWalsheimProMedium.woff2) format("woff2"),
+    url(/fonts/GTWalsheimProMedium.woff) format("woff"),
+    url(/fonts/GTWalsheimProMedium.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: local("GT Walsheim Pro Bold"), local("GTWalsheimProBold"),
+    url(/fonts/GTWalsheimProBold.woff2) format("woff2"),
+    url(/fonts/GTWalsheimProBold.woff) format("woff"),
+    url(/fonts/GTWalsheimProBold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: GT Walsheim Pro, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
+
+/* LOADER CSS */
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* LOADER CSS */
 
 .nav-link:hover,
 .active-link {
@@ -20,7 +77,11 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-decoration-color: #464646;
-  text-underline-offset: 27px;
+  text-underline-offset: 29px;
+}
+
+.cart-badge {
+  @apply absolute right-0 top-0 rounded-full bg-red-600 w-4 h-4 p-0 m-0 text-white font-mono text-sm leading-tight text-center;
 }
 
 footer {
@@ -50,44 +111,28 @@ footer h5 {
   @apply grid lg:gap-x-8 lg:gap-y-4 lg:grid-cols-3 md:gap-6 md:grid-cols-1;
 }
 
-.add-to button {
+.sizes button {
   @apply border-2 border-gray-200 bg-white hover:bg-gray-900 text-black hover:text-white w-full py-3;
 }
 
-.add-to button:disabled {
+.sizes button:disabled {
   color: #9ca3af;
   background-color: #f7f7f7;
   pointer-events: none !important;
 }
 
-/* LOADER CSS */
-.loader {
-  border-top-color: #3498db;
-  -webkit-animation: spinner 1.5s linear infinite;
-  animation: spinner 1.5s linear infinite;
+.selected-size {
+  background-color: #000 !important;
+  color: #fff !important;
 }
 
-@-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+.add-to button:disabled {
+  @apply bg-gray-500;
+  pointer-events: none;
 }
-
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/* LOADER CSS */
 
 .pag-item {
-  @apply text-gray-500 bg-transparent border border-gray-500 border-opacity-50 hover:bg-gray-500 hover:text-white active:bg-gray-600 font-bold uppercase text-xs px-4 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150;
+  @apply text-gray-500 bg-transparent border border-gray-500 border-opacity-50 hover:bg-gray-500 hover:text-white font-bold uppercase text-xs px-4 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150;
 }
 
 .pag-item:disabled {
