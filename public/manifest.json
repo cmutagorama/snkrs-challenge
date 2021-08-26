@@ -1,6 +1,6 @@
 {
-  "name": "SNKRS",
-  "short_name": "Online store",
+  "name": "SNKRS ECommerce",
+  "short_name": "SNKRS",
   "theme_color": "#ffffff",
   "background_color": "#EF4444",
   "display": "standalone",
@@ -9,8 +9,8 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "icons/icon-70x70.png",
-      "sizes": "70x70",
+      "src": "icons/icon-72x72.png",
+      "sizes": "72x72",
       "type": "image/png",
       "purpose": "any maskable"
     },    
@@ -21,14 +21,14 @@
       "purpose": "any maskable"
     },
     {
-      "src": "icons/icon-150x150.png",
-      "sizes": "150x150",
+      "src": "icons/icon-152x152.png",
+      "sizes": "152x152",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icons/icon-192x192.png",
-      "sizes": "192x192",
+      "src": "icons/icon-196x196.png",
+      "sizes": "196x196",
       "type": "image/png",
       "purpose": "any maskable"
     },    
