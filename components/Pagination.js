@@ -30,7 +30,7 @@ const Pagination = (props) => {
     onPageChange(currentPage - 1);
   };
 
-   const lastPage = paginationRange[paginationRange.length - 1];
+  const lastPage = paginationRange[paginationRange.length - 1];
 	
 	return (
 		<div className="flex items-center justify-center mb-4 mt-12">
